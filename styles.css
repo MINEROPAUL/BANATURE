@@ -1,0 +1,139 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles généraux */
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  line-height: 1.6;
+  background-color: #ffd700;
+  color: #00b31e;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  background-color: #a18900;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #336900;
+}
+
+main {
+  padding: 20px 0;
+}
+
+section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #a18900;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.logo-small {
+  width: 150px;
+  height: auto;
+}
+
+/* Masquer toutes les images par défaut */
+.mySlides {
+  display: none;
+}
+
+/* Style des boutons de navigation */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Lorsque le point est activé, changez la couleur de fond */
+.active {
+  background-color: #717171;
+}
+
+/* ... Votre code existant ... */
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.team-member {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(7, 114, 7, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.team-member img {
+  width: 20%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover img {
+  transform: scale(1.1);
+}
+
+.team-member .overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff60;
+  padding: 15px;
+  transition: bottom 0.3s ease-in-out;
+}
+
+.team-member:hover .overlay {
+  bottom: 0;
+}
